@@ -1,0 +1,90 @@
+import Vue from 'vue';
+// Vue.component("NextIcon", FootyButton);
+import NextIcon from '~/static/icons/next.svg';
+import PrevIcon from '~/static/icons/prev.svg';
+import GreenTickIcon from '~/static/icons/green-tick.svg';
+import InfoIcon from '~/static/icons/info.svg';
+import DownloadIcon from '~/static/icons/download.svg';
+import StatsIcon from '~/static/icons/stats.svg';
+import SettingsIcon from '~/static/icons/settings.svg';
+import DateIcon from '~/static/icons/date.svg';
+import SearchIcon from '~/static/icons/search.svg';
+import LeagueIcon from '~/static/icons/league.svg';
+import KeyboardIcon from '~/static/icons/keyboard.svg';
+import PlayIcon from '~/static/icons/play.svg';
+import HelpIcon from '~/static/icons/help.svg';
+import CalendarIcon from '~/static/icons/calendar.svg';
+import TrophyIcon from '~/static/icons/trophy.svg';
+import PicksIcon from '~/static/icons/picks.svg';
+import ResultsIcon from '~/static/icons/history-white.svg';
+import TimerIcon from '~/static/icons/timer.svg';
+import BallIcon from '~/static/icons/ball.svg';
+import FlagIcon from '~/static/icons/flag.svg';
+import RightIcon from '~/static/icons/right.svg';
+import CheckIcon from '~/static/icons/check.svg';
+import StarredIcon from '~/static/icons/starred.svg';
+import UnstarredIcon from '~/static/icons/unstarred.svg';
+import StarredGreenIcon from '~/static/icons/starredgreen.svg';
+import StarredHoverIcon from '~/static/icons/starredhover.svg';
+import UnstarredHoverIcon from '~/static/icons/unstarredhover.svg';
+import SideIcon from '~/static/icons/side.svg';
+import CloseIcon from '~/static/icons/close.svg';
+// for become-seller page
+import PlayVideoIcon from '~/static/icons/play-video.svg';
+import NotesIcon from '~/static/icons/notes.svg';
+import SendIcon from '~/static/icons/send.svg';
+import DollarFundingIcon from '~/static/icons/dollar-funding.svg';
+
+import ProfileIcon from '~/static/icons/profile.svg';
+import DollarIcon from '~/static/icons/dollar.svg';
+import QuestionMarkIcon from '~/static/icons/question-mark.svg';
+import QuitIcon from '~/static/icons/quit.svg';
+
+// for seller-dashboard page
+import CoinIcon from '~/static/icons/coin.svg';
+import ChartRasingIcon from '~/static/icons/chart-rasing.svg';
+import PeopleIcon from '~/static/icons/people.svg';
+
+Vue.component('NextIcon', NextIcon);
+Vue.component('PrevIcon', PrevIcon);
+Vue.component('DownloadIcon', DownloadIcon);
+Vue.component('RightIcon', RightIcon);
+Vue.component('CheckIcon', CheckIcon);
+
+Vue.component('InfoIcon', InfoIcon);
+Vue.component('GreenTickIcon', GreenTickIcon);
+Vue.component('StatsIcon', StatsIcon);
+Vue.component('SettingsIcon', SettingsIcon);
+Vue.component('DateIcon', DateIcon);
+Vue.component('SearchIcon', SearchIcon);
+Vue.component('LeagueIcon', LeagueIcon);
+Vue.component('KeyboardIcon', KeyboardIcon);
+Vue.component('PlayIcon', PlayIcon);
+Vue.component('HelpIcon', HelpIcon);
+Vue.component('CalendarIcon', CalendarIcon);
+Vue.component('TrophyIcon', TrophyIcon);
+Vue.component('PicksIcon', PicksIcon);
+Vue.component('ResultsIcon', ResultsIcon);
+Vue.component('TimerIcon', TimerIcon);
+Vue.component('BallIcon', BallIcon);
+Vue.component('FlagIcon', FlagIcon);
+Vue.component('StarredIcon', StarredIcon);
+Vue.component('UnstarredIcon', UnstarredIcon);
+Vue.component('StarredHoverIcon', StarredHoverIcon);
+Vue.component('UnstarredHoverIcon', UnstarredHoverIcon);
+Vue.component('StarredGreenIcon', StarredGreenIcon);
+Vue.component('SideIcon', SideIcon);
+Vue.component('CloseIcon', CloseIcon);
+Vue.component('PlayVideoIcon', PlayVideoIcon);
+Vue.component('NotesIcon', NotesIcon);
+Vue.component('SendIcon', SendIcon);
+Vue.component('DollarFundingIcon', DollarFundingIcon);
+
+Vue.component('ProfileIcon', ProfileIcon);
+Vue.component('DollarIcon', DollarIcon);
+Vue.component('QuestionMarkIcon', QuestionMarkIcon);
+Vue.component('QuitIcon', QuitIcon);
+
+Vue.component('CoinIcon', CoinIcon);
+Vue.component('ChartRasingIcon', ChartRasingIcon);
+Vue.component('PeopleIcon', PeopleIcon);

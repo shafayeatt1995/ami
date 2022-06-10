@@ -1,0 +1,46 @@
+image: node:14.17.5
+
+definitions: 
+  steps:
+    - step: &build-deploy
+        name: Build and deploy
+        caches:
+          - node
+        script:
+          - apt-get update
+          - apt-get install -y zip
+          - zip -r application.zip .
+          - pipe: atlassian/aws-code-deploy:0.2.5
+            variables:
+              AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              APPLICATION_NAME: $APPLICATION_NAME
+              S3_BUCKET: $S3_BUCKET
+              COMMAND: 'upload'
+              ZIP_FILE: 'application.zip'
+              VERSION_LABEL: 'footyamigo-1.0.0'
+          - pipe: atlassian/aws-code-deploy:0.2.5
+            variables:
+              AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              APPLICATION_NAME: $APPLICATION_NAME
+              DEPLOYMENT_GROUP: $DEPLOYMENT_GROUP
+              S3_BUCKET: $S3_BUCKET
+              COMMAND: 'deploy'
+              WAIT: 'true'
+              VERSION_LABEL: 'footyamigo-1.0.0'
+              IGNORE_APPLICATION_STOP_FAILURES: 'true'
+              FILE_EXISTS_BEHAVIOR: 'OVERWRITE'
+
+pipelines:
+  branches:
+    sandbox:
+      - step: *build-deploy
+    main:
+      - step:
+          <<: *build-deploy
+          deployment: production
+          # trigger: manual
+        

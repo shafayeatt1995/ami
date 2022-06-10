@@ -1,0 +1,298 @@
+[
+  {
+    "text": "PICKED MATCHES OVERALL",
+    "key": "picked_matches_overall",
+    "options": [
+      {
+        "text": "Show All",
+        "value": "all"
+      },
+      {
+        "text": "Over 50",
+        "value": "over-50"
+      },
+      {
+        "text": "Over 100",
+        "value": "over-100"
+      },
+      {
+        "text": "Over 200",
+        "value": "over-200"
+      },
+      {
+        "text": "Over 500",
+        "value": "over-500"
+      },
+      {
+        "text": "Over 1000",
+        "value": "over-1000"
+      },
+      {
+        "text": "Over 2000",
+        "value": "over-2000"
+      },
+      {
+        "text": "Over 5000",
+        "value": "over-5000"
+      }
+    ]
+  },
+  {
+    "text": "PICKED MATCHES LAST 7 DAYS",
+    "key": "picked_matches_last_7_days",
+    "options": [
+      {
+        "text": "Show All",
+        "value": "all"
+      },
+      {
+        "text": "Over 5",
+        "value": "over-5"
+      },
+      {
+        "text": "Over 10",
+        "value": "over-10"
+      },
+      {
+        "text": "Over 20",
+        "value": "over-20"
+      },
+      {
+        "text": "Over 50",
+        "value": "over-50"
+      },
+      {
+        "text": "Over 100",
+        "value": "over-100"
+      },
+      {
+        "text": "Over 250",
+        "value": "over-250"
+      }
+    ]
+  },
+  {
+    "text": "DATE OF PUBLISHING",
+    "key": "date_of_publishing",
+
+    "options": [
+      {
+        "text": "Show All",
+        "value": "all"
+      },
+      {
+        "text": "Newer than 7 days",
+        "value": "newer-7-days"
+      },
+      {
+        "text": "Newer than 14 days",
+        "value": "newer-14-days"
+      },
+      {
+        "text": "Newer than 1 month",
+        "value": "newer-1-month"
+      },
+      {
+        "text": "Newer than 3 months",
+        "value": "newer-3-months"
+      },
+      {
+        "text": "Newer than 6 months",
+        "value": "newer-6-months"
+      },
+      {
+        "text": "Newer than 1 year",
+        "value": "newer-1-year"
+      },
+      {
+        "text": "Older than 7 days",
+        "value": "older-7-days"
+      },
+      {
+        "text": "Older than 14 days",
+        "value": "older-14-days"
+      },
+      {
+        "text": "Older than 1 month",
+        "value": "older-1-month"
+      },
+      {
+        "text": "Older than 3 month",
+        "value": "older-3-months"
+      },
+      {
+        "text": "Older than 6 month",
+        "value": "older-6-months"
+      },
+      {
+        "text": "Older than 1 year",
+        "value": "older-1-year"
+      }
+    ]
+  },
+  {
+    "text": "REVIEWS SCORE",
+    "key": "reviews_score",
+
+    "options": [
+      {
+        "text": "Show All",
+        "value": "all"
+      },
+      {
+        "text": "At least 2.0",
+        "value": "at-least-2.0"
+      },
+      {
+        "text": "At least 2.5",
+        "value": "at-least-2.5"
+      },
+      {
+        "text": "At least 3.0",
+        "value": "at-least-3.0"
+      },
+      {
+        "text": "At least 3.5",
+        "value": "at-least-3.5"
+      },
+      {
+        "text": "At least 4.0",
+        "value": "at-least-4.0"
+      },
+      {
+        "text": "At least 4.5",
+        "value": "at-least-4.5"
+      }
+    ]
+  },
+  {
+    "text": "NUMBER OF REVIEWS",
+    "key": "number_of_reviews",
+    "options": [
+      {
+        "text": "Show All",
+        "value": "all"
+      },
+      {
+        "text": "At least one",
+        "value": "over-0"
+      },
+      {
+        "text": "Over 5",
+        "value": "over-5"
+      },
+      {
+        "text": "Over 10",
+        "value": "over-10"
+      },
+      {
+        "text": "Over 20",
+        "value": "over-20"
+      },
+      {
+        "text": "Over 50",
+        "value": "over-50"
+      },
+      {
+        "text": "Over 100",
+        "value": "over-100"
+      },
+      {
+        "text": "Over 500",
+        "value": "over-500"
+      },
+      {
+        "text": "Over 1000",
+        "value": "over-1000"
+      }
+    ]
+  },
+  {
+    "text": "NUMBER OF SUBSCRIBERS",
+    "key": "number_of_subscribers",
+
+    "options": [
+      {
+        "text": "Show All",
+        "value": "all"
+      },
+      {
+        "text": "At least one",
+        "value": "over-0"
+      },
+      {
+        "text": "Over 5",
+        "value": "over-5"
+      },
+      {
+        "text": "Over 10",
+        "value": "over-10"
+      },
+      {
+        "text": "Over 20",
+        "value": "over-20"
+      },
+      {
+        "text": "Over 50",
+        "value": "over-50"
+      },
+      {
+        "text": "Over 100",
+        "value": "over-100"
+      },
+      {
+        "text": "Over 500",
+        "value": "over-500"
+      },
+      {
+        "text": "Over 1000",
+        "value": "over-1000"
+      }
+    ]
+  },
+  {
+    "text": "TYPE OF STRATEGY",
+    "key": "type_of_strategy",
+
+    "options": [
+      {
+        "text": "Show All",
+        "value": "all"
+      },
+      {
+        "text": "Pre Match",
+        "value": "pre-match"
+      },
+      {
+        "text": "In Play",
+        "value": "in-play"
+      }
+    ]
+  },
+  {
+    "text": "ORDER BY",
+    "key": "order_by",
+    "options": [
+      {
+        "text": "Number of subscribers",
+        "value": "number_of_subscribers"
+      },
+      {
+        "text": "Reviews score",
+        "value": "reviews_score"
+      },
+      {
+        "text": "Number of reviews",
+        "value": "number_of_reviews"
+      },
+      {
+        "text": "Picked matches overall",
+        "value": "picked_matches_over_all"
+      },
+      {
+        "text": "Picked matches in last 7 days",
+        "value": "picked_matches_last_7_days"
+      }
+    ]
+  }
+]

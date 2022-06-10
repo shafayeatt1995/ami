@@ -1,0 +1,61 @@
+location / {
+	proxy_ssl_server_name on;
+	proxy_pass       http://localhost:3000;
+
+	proxy_redirect   off;
+
+	proxy_set_header Host $host;
+
+	proxy_set_header X-Real-IP $remote_addr;
+
+	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+	proxy_set_header X-Forwarded-Host $server_name;
+
+}
+
+/etc/nginx/conf.d/directives.conf
+
+location / {
+  proxy_pass http://footyamigodemo;
+}
+
+upstream footyamigodemo {
+    server 127.0.0.1:4000;
+}
+
+upstream footyamigo{
+    server 127.0.0.1:3000;
+}
+
+sudo nano /etc/nginx/sites-available/sandbox.footyamigo.com
+
+ln -s /etc/nginx/sites-available/sandbox.footyamigo.com /etc/nginx/sites-enabled/sandbox.footyamigo.com
+
+#http server
+server {
+    listen 80;
+		server_name sandbox.footyamigo.com;
+		location / {
+				proxy_pass http://footyamigo;
+		}
+}
+
+sudo mv /etc/nginx/sites-available/main.footyamigo.com /etc/nginx/sites-available/dashboard.footyamigo.com 
+sudo ln -s /etc/nginx/sites-available/dashboard.footyamigo.com /etc/nginx/sites-enabled/dashboard.footyamigo.com
+sudo rm /etc/nginx/sites-enabled/main.footyamigo.com
+nginx -t
+
+sudo systemctl restart nginx
+
+sudo certbot --nginx -d dashboard.footyamigo.com
+
+cat > /etc/nginx/sites-available/dashboard.footyamigo.com
+
+server {
+    listen 80;
+		server_name dashboard.footyamigo.com;
+		location / {
+				proxy_pass http://footyamigo;
+		}
+}

@@ -1,0 +1,10 @@
+export const FIXTURES_PER_PAGE_UPCOMING = 50;
+export const FIXTURES_PER_PAGE_UPCOMING_BY_STRATEGY = 3;
+
+const SCREEN_SIZE = {
+  DESKTOP: 0,
+  MOBILE: 1,
+};
+Object.freeze(SCREEN_SIZE);
+
+export { SCREEN_SIZE };

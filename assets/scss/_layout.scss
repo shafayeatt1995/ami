@@ -1,0 +1,58 @@
+.d-grid {
+  display: grid;
+}
+.grid-gap-10,
+.gap-10 {
+  gap: 10px;
+}
+
+@for $i from 0 through 10 {
+  .gap-#{$i*5} {
+    gap: #{$i * 5}px !important;
+  }
+}
+
+@for $i from 0 through 12 {
+  .flex-#{$i} {
+    flex: #{$i};
+  }
+}
+
+$sizes: 24, 26, 36;
+
+@each $size in $sizes {
+  .is-#{$size}x#{$size} {
+    height: #{$size}px;
+    width: #{$size}px;
+  }
+}
+
+@for $col from 1 to 5 {
+  .grid-col-#{$col} {
+    grid-template-columns: repeat($col, minmax(0, 1fr));
+  }
+}
+
+@include for-min-size(sm) {
+  @for $col from 1 to 5 {
+    .grid-col-sm-#{$col} {
+      grid-template-columns: repeat($col, minmax(0, 1fr));
+    }
+  }
+}
+
+@include for-min-size(md) {
+  @for $col from 1 to 5 {
+    .grid-col-md-#{$col} {
+      grid-template-columns: repeat($col, minmax(0, 1fr));
+    }
+  }
+}
+
+@include for-min-size(lg) {
+  @for $col from 1 to 5 {
+    .grid-col-lg-#{$col} {
+      grid-template-columns: repeat($col, minmax(0, 1fr));
+    }
+  }
+}
